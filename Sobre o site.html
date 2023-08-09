@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Site</title>
+    <link rel="stylesheet" href="css/Parte visual.css">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dela+Gothic+One&display=swap');
+
+    body {
+        font-family: 'Roboto', Arial, sans-serif;
+        line-height: 1.6;
+        color: #101827;
+    }
+
+    /* Estilos da seção dedicada ao site */
+    #sobre-o-site {
+        margin: 40px;
+        padding: 20px;
+        border: 1px solid #d0c3c3;
+        background-color: #f9f9f9;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        border-radius: 10px;
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    #sobre-o-site h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: rgba(55, 89, 99, 255);
+    }
+
+    #sobre-o-site p {
+        font-family: 'Roboto', Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #saiba-mais {
+        cursor: pointer;
+        color: rgba(55, 89, 99, 255);
+        text-decoration: underline;
+    }
+
+    .mais-detalhes {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .mais-detalhes p {
+        margin-top: 20px;
+        color: #333;
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .galeria {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .galeria img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsividade para a galeria de imagens */
+    @media (max-width: 768px) {
+        .galeria {
+            flex-wrap: wrap;
+        }
+
+        .galeria img {
+            width: 150px;
+            height: 100px;
+        }
+    }
+
+    .imagem-p {
+        margin: 40px;
+        padding: 20px;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        border-radius: 10px;
+        display: flex;
+        /* Adiciona um display flex */
+        align-items: center;
+        /* Alinha verticalmente ao centro */
+        justify-content: space-between;
+        float: right;
+        position: sticky;
+        top: 40px;
+    }
+
+    .imagem-p img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(164, 14, 14, 0.1);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        flex: 1;
+        max-width: 200px;
+        position: sticky;
+        top: 40px;
+    }
+
+    .imagem-p.mostrar-mais img {
+        height: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="Logo">
+            <h1><img src="Imagens para o site/KIROS-PhotoRoom.png-PhotoRoom.png" alt=""
+                    style="width: 320px; height: 180px; position: absolute; top: -43px; left: -10px;"></h1>
+        </div>
+
+        <div class="Menu">
+            <a href="Tela de Inicio.html">Home</a>
+            <!--a href="Sobre o site.html" class="active">Sobre</a-->
+            <a href="Serviços.html">Serviços</a>
+            <a href="Chat bot PBI.html" class="Botao">Fale conosco</a>
+        </div>
+    </nav>
+
+    <div class="galeria">
+        <img src="Imagens para o site/Analysis-cuate.png" alt="Recursos do Power BI">
+        <img src="Imagens para o site/chuong-5-ke-hoach-trien-khai-content.png" alt="Análise de dados">
+        <img src="Imagens para o site/unnamed.png" alt="Dashboard interativo">
+        <img src="Imagens para o site/Data analysis-bro_edited.webp" alt="Integração com outras ferramentas">
+        <img src="Imagens para o site/концепция-работы-в-офисе-плоском-дизайне-с-людьми-иллюстрация-вектора-254397722.webp"
+            alt="Visualizações de dados">
+    </div>
+    <div class="container">
+        <section id="sobre-o-site">
+            <h2>Sobre o Site</h2>
+            <p>
+                Bem-vindo ao <b>Mundo do Power BI:</b> Desvendando os Segredos dos Dados
+            </p>
+            <p>
+                <span id="sobre-curto">Este site foi criado com o objetivo de explorar e aprimorar o potencial do Power
+                    BI,
+                    uma
+                    poderosa
+                    ferramenta de análise de dados desenvolvida pela Microsoft. Aqui, mergulharemos no universo dos
+                    dados,
+                    revelando
+                    suas histórias ocultas e trazendo insights valiosos para o seu negócio. Preparado para embarcar em
+                    uma
+                    jornada
+                    fascinante no mundo dos dados?</span>
+            </p>
+            <div id="sobre-longo" class="mais-detalhes">
+
+                <p>
+                    Este site foi criado com o objetivo de explorar e aprimorar o potencial do Power BI, uma poderosa
+                    ferramenta
+                    de análise de dados desenvolvida pela Microsoft. Aqui, mergulharemos no universo dos dados,
+                    revelando
+                    suas
+                    histórias ocultas e trazendo insights valiosos para o seu negócio. Preparado para embarcar em uma
+                    jornada
+                    fascinante no mundo dos dados? Então, vamos lá!
+                </p>
+                <p>
+                    <b>Capítulo 1: Introdução ao Power BI</b>
+                    <br>
+                    Neste capítulo inicial, faremos uma apresentação detalhada do Power BI. O que é o Power BI? Quais
+                    são os
+                    seus principais recursos e funcionalidades? Como ele pode ser usado para transformar dados em
+                    informações
+                    inteligíveis? Você descobrirá como o Power BI pode se tornar um poderoso aliado no processo de
+                    tomada de
+                    decisões.
+                </p>
+                <p>
+                    <b>Capítulo 2: Conectando e Importando Dados</b>
+                    <br>
+                    Os dados são o coração do Power BI. Aqui, aprenderemos a conectar e importar dados de diversas
+                    fontes,
+                    como
+                    bancos de dados, arquivos locais, serviços online e muito mais. Vamos explorar técnicas para limpar
+                    e
+                    transformar os dados, garantindo que estejam prontos para análise.
+                </p>
+                <p>
+                    <b>Capítulo 3: Modelagem de Dados</b>
+                    <br>
+                    A modelagem de dados é uma etapa crucial para criar relações e hierarquias que impulsionarão a
+                    inteligência
+                    do Power BI. Neste capítulo, desvendaremos os segredos da modelagem de dados e compartilharemos
+                    práticas
+                    recomendadas para criar modelos eficientes e compreensíveis.
+                </p>
+                <p>
+                    <b>Capítulo 4: Visualizações Persuasivas</b>
+                    <br>
+                    Aqui, entramos no mundo das visualizações de dados. Aprenderemos a criar gráficos, tabelas
+                    dinâmicas,
+                    mapas,
+                    medidores e outras formas impressionantes de representar os dados. Você descobrirá como tornar suas
+                    visualizações envolventes e persuasivas para impactar seu público.
+                </p>
+                <p>
+                    <b>Capítulo 5: Criação de Relatórios Interativos</b>
+                    <br>
+                    Um relatório interativo é uma porta de entrada para explorar os dados com liberdade. Neste capítulo,
+                    mostraremos como criar relatórios interativos com filtros, slicers e outras ferramentas que permitem
+                    aos
+                    usuários personalizar sua experiência de análise.
+                </p>
+                <p>
+                    <b>Capítulo 6: Publicação e Compartilhamento de Relatórios</b>
+                    <br>
+                    Não basta ter um relatório poderoso; é preciso compartilhá-lo com as pessoas certas. Neste capítulo,
+                    explicaremos como publicar e compartilhar seus relatórios com colegas, clientes e stakeholders.
+                    Vamos
+                    explorar as opções de compartilhamento, como o Power BI Service e o Power BI Mobile.
+                </p>
+                <p>
+                    <b>Capítulo 7: Integração com outras Ferramentas</b>
+                    <br>
+                    O Power BI não trabalha sozinho; ele se integra perfeitamente com outras ferramentas e serviços.
+                    Neste
+                    capítulo, descobriremos como o Power BI se conecta ao Excel, ao Azure, ao SharePoint e a outras
+                    plataformas,
+                    expandindo suas possibilidades de análise.
+                </p>
+                <p>
+                    <b>Capítulo 8: Segurança e Governança dos Dados</b>
+                    <br>
+                    A segurança dos dados é fundamental para qualquer organização. Aqui, abordaremos as melhores
+                    práticas de
+                    segurança e governança do Power BI, garantindo que os dados estejam protegidos e que o acesso seja
+                    concedido
+                    de forma adequada.
+                </p>
+                <p>
+                    <b>Capítulo 9: Power BI Premium e Capacidades Avançadas</b>
+                    <br>
+                    A versão Premium do Power BI oferece recursos avançados para organizações que precisam de análises
+                    mais
+                    sofisticadas. Neste capítulo, exploraremos o Power BI Premium e suas capacidades avançadas, como
+                    análises de
+                    big data, integração com o Power BI Report Server e muito mais.
+                </p>
+                <p>
+                    <b>Capítulo 10: Casos de Sucesso e Inspiração</b>
+                    <br>
+                    Para finalizar nossa jornada, mergulharemos em casos reais de sucesso do Power BI. Conheceremos
+                    empresas
+                    e
+                    organizações que alcançaram resultados surpreendentes com o poder do Power BI, inspirando você a
+                    explorar
+                    ainda mais o potencial dessa ferramenta incrível.
+                </p>
+                <p>
+                    Aproveite esta jornada emocionante no mundo do Power BI. Cada capítulo traz novos aprendizados,
+                    dicas
+                    valiosas e exemplos práticos para você se tornar um mestre na arte da análise de dados. Seja você um
+                    entusiasta de dados ou um profissional experiente, o Power BI oferece possibilidades ilimitadas para
+                    descobrir o verdadeiro significado por trás dos números. Agora é hora de desvendar os segredos dos
+                    dados
+                    e
+                    transformá-los em informações valiosas. Vamos começar!
+                </p>
+                <p>Este site foi criado pela Empresa Kirosteide Vugo (KIROS) </p>
+            </div>
+            <p id="saiba-mais">Saiba mais</p>
+        </section>
+
+
+        <div class="imagem-p" id="imagem-div">
+            <img src="Imagens para o site/blogdes9.png">
+        </div>
+    </div>
+
+
+    <script>
+        function voltarAoTopo() {
+            window.scrollTo(0, 0);
+        }
+
+        document.getElementById('saiba-mais').addEventListener('click', function () {
+            var sobreCurto = document.getElementById('sobre-curto');
+            var sobreLongo = document.getElementById('sobre-longo');
+            var imagemDiv = document.getElementById('imagem-div');
+
+            if (sobreCurto.style.display === 'none') {
+                sobreCurto.style.display = 'block';
+                sobreLongo.style.maxHeight = '0';
+                imagemDiv.classList.remove('mostrar-mais');
+            } else {
+                sobreCurto.style.display = 'none';
+                sobreLongo.style.maxHeight = sobreLongo.scrollHeight + 'px';
+                imagemDiv.classList.add('mostrar-mais');
+            }
+        });
+    </script>
+</body>
+
+</html>

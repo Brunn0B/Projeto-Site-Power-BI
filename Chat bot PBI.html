@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de teste de Power Bi">
+    <meta name="kaywords" content="Power Bi Testando">
+
+    <title>Bot de Ajuda</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #06234d;
+        }
+
+        .navbar {
+            display: flex;
+            flex-flow: row wrap;
+            height: 100px;
+            background: rgba(55, 89, 99, 255);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Logo {
+            flex: 1;
+        }
+
+        .Logo img {
+            width: 80px;
+            height: auto;
+        }
+
+        .Menu {
+            flex: 2;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .Menu a {
+            color: #ffc801;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 15px;
+            transition: color 0.2s;
+        }
+
+        .Menu a:hover {
+            color: #9bc66d;
+            border-top: 4px solid #03f1f4;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 80px;
+        }
+
+        .headline {
+            flex: 1;
+            margin-right: 50px;
+        }
+
+        .headline h2 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .headline p {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .Contact-btn {
+            background-color: #0ec0ba;
+            color: #2c444e;
+            text-transform: uppercase;
+            font-size: 18px;
+            padding: 15px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .Contact-btn:hover {
+            background-color: #0ed0ba;
+        }
+
+        .Img-headline {
+            flex: 1;
+            text-align: center;
+        }
+
+        .Img-headline img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .galeria img {
+            margin: 10px;
+            max-width: 200px;
+            height: auto;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 7px;
+            background-color: #2c444e;
+            color: #ffc801;
+        }
+
+        .logo-rodape h1 {
+            flex: 20%;
+            margin-left: 10%;
+            /* border: 1px solid rgb(16, 153, 13); */
+            text-align: center;
+        }
+
+        .agencia {
+            font-size: 18px;
+        }
+
+        .headline {
+            flex: 1;
+            margin-right: 50px;
+            position: relative;
+        }
+
+
+        #chatbox {
+            position: absolute;
+            top: calc(26% - 2rem);
+            right: 0;
+            transform: translateY(-50%);
+            width: 350px;
+            background-color: #ffffff;
+            /* Fundo branco para facilitar a leitura */
+            border: 1px solid #ccc;
+            /* Cor da borda */
+            border-radius: 8px;
+            padding: 20px;
+            /* Maior espaçamento interno */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .bot-message {
+            color: #fff;
+            /* Texto branco para o bot */
+            background-color: #2c444e;
+            /* Cor de fundo do balão do bot */
+            border-radius: 8px;
+            padding: 8px 12px;
+        }
+
+        .user-message {
+            color: #2c444e;
+            /* Texto preto para o usuário */
+            background-color: #f0f0f0;
+            /* Cor de fundo do balão do usuário */
+            border-radius: 8px;
+            padding: 8px 12px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="Logo">
+            <img src="/Imagens para o site/KIROS-PhotoRoom.png-PhotoRoom.png" alt=""
+                style="width: 320px; height: 180px; position: absolute; top: -43px; left: -10px;">
+        </div>
+
+        <div class="Menu">
+            <a href="Tela de Inicio.html">Home</a>
+            <a href="Serviços.html">Serviços</a>
+            <a href="Sobre o site.html">Sobre</a>
+            <!--a href="Chat bot PBI.html" class="Contact-btn">Fale conosco</a-->
+        </div>
+    </nav>
+
+    <div class="header">
+        <div class="headline">
+            <h2>Olá! Bem-vindo(a) ao Bot de Ajuda!</h2>
+            <p>Como posso ajudar você hoje?</p>
+            <a href="#chatbox" class="Contact-btn" onclick="toggleChatbox()">Iniciar Chat</a>
+        </div>
+        <div class="Img-headline">
+            <img src="/Imagens para o site/Bot-213267-P0NOHC-233-a.jpg" alt="Bot de Ajuda">
+        </div>
+    </div>
+
+    <div class="galeria">
+        <img src="/Imagens do chat bot/chatbot.png">
+        <img src="/Imagens do chat bot/artificial-intelligence.png">
+        <img src="/Imagens do chat bot/chat-bot.gif">
+        <img src="/Imagens do chat bot/question.png">
+        <img src="/Imagens do chat bot/message.png">
+    </div>
+
+
+    <footer>
+        <div class="logo-rodape">
+
+        </div>
+
+    </footer>
+
+    <!-- Chatbox -->
+    <div id="chatbox" style="display: none;">
+        <div id="chatbox-response">
+            <p class="bot-message">Olá! Como posso ajudar?</p>
+        </div>
+        <input type="text" id="userInput" placeholder="Digite sua mensagem aqui..." onkeyup="handleUserInput(event)">
+    </div>
+    <script>
+        // Função para exibir a resposta do bot no chatbox
+        function displayBotResponse(response) {
+            const chatbox = document.getElementById("chatbox-response");
+            const messageElement = document.createElement("p");
+            messageElement.textContent = `Bot: ${response}`;
+            messageElement.classList.add("bot-message");
+            chatbox.appendChild(messageElement);
+        }
+
+        // Função para lidar com a entrada do usuário
+        async function handleUserInput(event) {
+            if (event.key === "Enter") {
+                const userInput = document.getElementById("userInput");
+                const userQuestion = userInput.value.trim();
+                userInput.value = "";
+
+                if (userQuestion === "") {
+                    return; // Se a pergunta do usuário estiver vazia, não faz nada
+                }
+
+                // Faz a chamada para a rota /api/ask no servidor backend
+                const response = await fetch("/api/ask", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ question: userQuestion }),
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    displayBotResponse(data.response);
+                } else {
+                    console.error("Erro ao consultar a API do GPT-3.");
+                    displayBotResponse("Desculpe, ocorreu um erro ao processar sua pergunta.");
+                }
+
+                scrollChatboxToBottom();
+            }
+        }
+
+        // Função para rolar o chatbox para a parte inferior
+        function scrollChatboxToBottom() {
+            const chatbox = document.getElementById("chatbox-response");
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        // Função de inicialização do chat
+        function initializeChat() {
+            const chatboxToggle = document.getElementById("chatbox-toggle");
+            chatboxToggle.addEventListener("click", toggleChatbox);
+        }
+
+        // Inicializar o chat quando a página carregar
+        window.addEventListener("load", initializeChat);
+
+        function toggleChatbox() {
+            const chatbox = document.getElementById("chatbox");
+            const chatboxInput = document.getElementById("userInput");
+
+            if (chatbox.style.display === "none") {
+                chatbox.style.display = "block";
+                chatboxInput.style.display = "block";
+                chatboxInput.focus();
+            } else {
+                chatbox.style.display = "none";
+                chatboxInput.style.display = "none";
+            }
+        }
+        function askQuestion() {
+            const questionInput = document.getElementById("question");
+            const question = questionInput.value;
+
+            fetch("http://localhost:3000/api/ask", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ question })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    const responseDiv = document.getElementById("response");
+                    responseDiv.textContent = "Resposta: " + data.response;
+                })
+                .catch(error => {
+                    console.error(error);
+                    const responseDiv = document.getElementById("response");
+                    responseDiv.textContent = "Desculpe, ocorreu um erro ao processar sua pergunta.";
+                });
+        }
+    </script>
+</body>
+
+</html>

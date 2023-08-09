@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de teste de Power Bi">
+    <meta name="kaywords" content="Power Bi Testando">
+
+    <title>Serviços</title>
+    <style>
+        .Botao {
+            background: rgba(3, 22, 68, 0.426);
+            padding: 10px 25px;
+            border-radius: 5px;
+            margin-right: 10%;
+            margin-left: 5%;
+            color: rgba(255, 200, 1, 255)
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            flex-flow: row wrap;
+            height: 100px;
+            background: rgba(55, 89, 99, 255);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Logo {
+            flex: 1;
+        }
+
+        .Logo img {
+            width: 80px;
+            height: auto;
+        }
+
+        .Menu {
+            flex: 2;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .Menu a {
+            color: #ffc801;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 15px;
+            transition: color 0.2s;
+        }
+
+        .Menu a:hover {
+            color: #9bc66d;
+            border-top: 4px solid #03f1f4;
+        }
+
+        .services {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #06234d;
+        }
+
+        .service-item {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+            max-width: 300px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            padding: 20px;
+        }
+
+        .service-item:hover {
+            transform: scale(1.1);
+        }
+
+        .service-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .service-item h3 {
+            margin: 15px 0;
+            color: #06234d;
+        }
+
+        .service-item p {
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 7px;
+            background-color: #2c444e;
+            color: #ffc801;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="Logo">
+            <h1><img src="/Imagens para o site/KIROS-PhotoRoom.png-PhotoRoom.png" alt=""
+                    style="width: 320px; height: 180px; position: absolute; top: -43px; left: -10px;">
+            </h1>
+        </div>
+
+        <div class="Menu">
+            <a href="Tela de Inicio.html">Home</a>
+            <a href="Sobre o site.html">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="Chat bot PBI.html" class="Botao">Fale conosco</a>
+        </div>
+    </nav>
+
+    <!-- Conteúdo da página de serviços -->
+    <section class="services">
+        <h2>Nossos Serviços</h2>
+        <div class="service-item">
+            <img src="service1.jpg" alt="Serviço 1">
+            <h3>Serviço 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus tellus vel velit eleifend, in
+                consectetur urna euismod.</p>
+        </div>
+        <div class="service-item">
+            <img src="service2.jpg" alt="Serviço 2">
+            <h3>Serviço 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus tellus vel velit eleifend, in
+                consectetur urna euismod.</p>
+        </div>
+        <div class="service-item">
+            <img src="service3.jpg" alt="Serviço 3">
+            <h3>Serviço 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus tellus vel velit eleifend, in
+                consectetur urna euismod.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Todos os direitos reservados &copy; 2023 Empresa KIROS</p>
+    </footer>
+</body>
+
+</html>
