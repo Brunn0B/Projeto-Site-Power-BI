@@ -19,7 +19,7 @@ app.post('/api/ask', async (req, res) => {
 // Função para obter a resposta do bot usando a API do GPT-3
 async function getBotResponse(userQuestion) {
     const url = "https://api.openai.com/v1/engines/davinci-codex/completions";
-    const apiKey = "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"; // Substitua pelo sua chave de API
+    const apiKey = "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"; // Substitua pelo sua chave de API
     const prompt = `Usuário: ${userQuestion}\nBot:`;
 
     try {
